@@ -1,4 +1,4 @@
 [pull]
-    rebase = true
+	ff = only
 [branch "main"]
-	rebase = true
+	ff = only

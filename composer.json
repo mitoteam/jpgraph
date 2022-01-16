@@ -1,0 +1,19 @@
+{
+  "name": "mitoteam/jpgraph",
+  "type": "library",
+  "description": "JpGraph library composer commpatible fork",
+  "keywords": ["jpgraph"],
+  "homepage": "https://github.com/mitoteam/jpgraph",
+  "license": "QPL-1.0",
+  "authors": [
+    {
+      "name": "JpGraph team"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "classmap": [
+      "src/MtJpGraph.php"
+    ]
+  }
+}
