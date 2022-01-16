@@ -3634,6 +3634,7 @@ class GanttVLine extends GanttPlotObject {
         $this->iLine->SetColor($aColor);
         $this->iLine->SetWeight($aWeight);
         $this->iLine->SetStyle($aStyle);
+        $this->iLine->Show();
         $this->iStart = $aDate;
         $this->title = new TextPropertyBelow();
         $this->title->Set($aTitle);

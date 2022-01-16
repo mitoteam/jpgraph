@@ -126,7 +126,7 @@ class Image {
         }
 
         $this->img = @imagecreatetruecolor($aWidth, $aHeight);
-        if( $this->img < 1 ) {
+        if( !$this->img ) {
             JpGraphError::RaiseL(25126);
             //die("Can't create truecolor image. Check that you really have GD2 library installed.");
         }
