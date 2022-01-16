@@ -1,6 +1,6 @@
-# jpgraph
+# JpGraph ( ** This is not official version ** )
 
-jpgraph.net library composer helper
+JpGraph library composer version.
 
 Version **4.3.5**
 
