@@ -1,0 +1,4 @@
+[pull]
+    rebase = true
+[branch "main"]
+	rebase = true
