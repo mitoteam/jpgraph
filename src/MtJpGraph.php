@@ -4,8 +4,20 @@ namespace mitoteam\jpgraph;
 
 final class MtJpGraph
 {
-  private static $_loaded_modules = array();
+  private static $_loaded = array();
 
+  /**
+   * Loads jpgraph library.
+   *
+   * @param array|string $modules Either string with jpgraph module name or array with several modules names.
+   *
+   * @return void
+   * @throws \Exception
+   * @example
+   *  MtJpGraph::load(); # not really useful without modules
+   *  MtJpGraph::load('bar'); # load with single module
+   *  MtJpGraph::load(['bar', 'line']); #load with several modules
+   */
   public static function load($modules = null)
   {
     // basic "module" has empty name
