@@ -10,7 +10,9 @@
       "name": "JpGraph team"
     }
   ],
-  "require": {},
+  "require": {
+    "php": ">=5.5 <=8.0"
+  },
   "autoload": {
     "classmap": [
       "src/MtJpGraph.php"
