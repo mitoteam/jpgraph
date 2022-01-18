@@ -5,6 +5,7 @@
 ![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/mitoteam/jpgraph)
 
 Current JpGraph library version: **4.3.5**
+
 PHP version support: from **5.5 to 8.0**. Unfortunately PHP 8.1 is not supported by JpGraph library itself.
 
 ## Usage
