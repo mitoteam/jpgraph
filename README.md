@@ -2,7 +2,7 @@
 
 [![GitHub Version](https://img.shields.io/github/v/release/mitoteam/jpgraph?style=flat-square)](https://github.com/mitoteam/jpgraph)
 [![Packagist Version](https://img.shields.io/packagist/v/mitoteam/jpgraph?include_prereleases&style=flat-square)](https://packagist.org/packages/mitoteam/jpgraph)
-![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/mitoteam/jpgraph)
+[![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/mitoteam/jpgraph?style=flat-square)](https://jpgraph.net/download/manuals/chunkhtml/ch01s05.html)
 
 Current JpGraph library version: **4.3.5**
 
