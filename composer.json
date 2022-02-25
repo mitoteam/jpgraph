@@ -1,7 +1,7 @@
 {
   "name": "mitoteam/jpgraph",
   "type": "library",
-  "description": "Composer compatible version of JpGraph library",
+  "description": "Composer compatible version of JpGraph library with PHP 8.1 support",
   "keywords": ["jpgraph"],
   "homepage": "https://github.com/mitoteam/jpgraph",
   "license": "QPL-1.0",
@@ -11,7 +11,7 @@
     }
   ],
   "require": {
-    "php": ">=5.5 <8.1"
+    "php": ">=5.5 <=8.1"
   },
   "autoload": {
     "classmap": [

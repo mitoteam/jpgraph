@@ -1,4 +1,4 @@
-# Composer compatible JpGraph library
+# Composer compatible JpGraph library with PHP 8.1 support
 
 [![GitHub Version](https://img.shields.io/github/v/release/mitoteam/jpgraph?style=flat-square)](https://github.com/mitoteam/jpgraph)
 [![Packagist Version](https://img.shields.io/packagist/v/mitoteam/jpgraph?include_prereleases&style=flat-square)](https://packagist.org/packages/mitoteam/jpgraph)
@@ -6,7 +6,9 @@
 
 Current JpGraph library version: **4.3.5**
 
-PHP version support: from **5.5 to 8.0**. Unfortunately PHP 8.1 is not supported by JpGraph library itself.
+**PHP 8.1 support added in version 10.0.0!**
+
+PHP version support: from **5.5 to 8.1**.
 
 ## Usage
 
@@ -30,6 +32,12 @@ MtJpGraph::load(['bar', 'line']); # load with several modules
 //using original JpGraph classes
 $graph = new Graph(200, 300);
 ```
+
+## Version numbers
+
+We started with version 4.3.5 as latest available library version in time we started. But we need to make some patches to original library (for example to support PHP 8.1). So we had to switch to own version numbers to be able to release updates.
+
+At 2022-02-25 we decided to switch to version number **10.0.0** to leave some space in numbering from original library v4.3.5.
 
 ## Links
 
