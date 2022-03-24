@@ -490,7 +490,8 @@ class TTF {
             }
 
             // check jpgraph/src/fonts dir
-            $jpgraph_font_file = $jpgraph_font_dir . $font_file;
+            // MiTo Team: do not prepend $jpgraph_font_dir if path is already absolute
+            $jpgraph_font_file = ($font_file[0] == DIRECTORY_SEPARATOR ? '' : $jpgraph_font_dir) . $font_file;
             if (file_exists($jpgraph_font_file) === true && is_readable($jpgraph_font_file) === true) { 
                 $font_file = $jpgraph_font_file;
                 break;
