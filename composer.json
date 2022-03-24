@@ -11,7 +11,7 @@
     }
   ],
   "require": {
-    "php": ">=5.5 <=8.1"
+    "php": ">=5.5"
   },
   "autoload": {
     "classmap": [
