@@ -36,7 +36,7 @@ $graph = new Graph(200, 300);
 
 ## Usage WITHOUT composer
 
-Download latest version archive from [Releases](/mitoteam/jpgraph/releases) page and unpack it. 
+Download latest version archive from [Releases](https://github.com/mitoteam/jpgraph/releases) page and unpack it. 
 There are php-8.1 patched JpGraph sources in `src\lib` subfolder.
 
 ## Version numbers
