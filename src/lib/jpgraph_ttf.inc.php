@@ -489,9 +489,15 @@ class TTF {
                 JpGraphError::RaiseL(25048,$fam);//("Unknown font style specification [$fam].");
             }
 
+            // MiTo Team: if absolute path provided check if file exists
+            if($font_file[0] === DIRECTORY_SEPARATOR) {
+              if (file_exists($font_file) === true && is_readable($font_file) === true) {
+                break;
+              }
+            }
+
             // check jpgraph/src/fonts dir
-            // MiTo Team: do not prepend $jpgraph_font_dir if path is already absolute
-            $jpgraph_font_file = ($font_file[0] == DIRECTORY_SEPARATOR ? '' : $jpgraph_font_dir) . $font_file;
+            $jpgraph_font_file = $jpgraph_font_dir . $font_file;
             if (file_exists($jpgraph_font_file) === true && is_readable($jpgraph_font_file) === true) { 
                 $font_file = $jpgraph_font_file;
                 break;
