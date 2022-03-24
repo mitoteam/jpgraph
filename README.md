@@ -11,9 +11,9 @@ Current JpGraph library version: **4.3.5**
 PHP versions support: from **5.5 to 8.1**. [Original notes](https://jpgraph.net/download/manuals/chunkhtml/ch01s05.html) about PHP versions.
 
 
-## Usage
+## Usage with composer
 
-This is just a helper to load original JpGraph library after declaring it as your dependency in composer.json:
+This package is a helper to load original JpGraph library after declaring it as your dependency in composer.json:
 
 ```
 composer require mitoteam/jpgraph
@@ -33,6 +33,11 @@ MtJpGraph::load(['bar', 'line']); # load with several modules
 //using original JpGraph classes
 $graph = new Graph(200, 300);
 ```
+
+## Usage WITHOUT composer
+
+Download latest version archive from [Releases](/mitoteam/jpgraph/releases) page and unpack it. 
+There are php-8.1 patched JpGraph sources in `src\lib` subfolder.
 
 ## Version numbers
 
