@@ -652,7 +652,7 @@ class Graph {
     function InitializeFrameAndMargin() {
         $this->doframe=true;
         $this->frame_color='black';
-        $this->frame_weight=1; 
+        $this->frame_weight=1;
 
         $this->titlebackground_framecolor = 'blue';
         $this->titlebackground_framestyle = 2;
@@ -1593,14 +1593,14 @@ class Graph {
     }
 
     function AdjustMarginsForTitles() {
-        $totrequired = 
-            ($this->title->t != '' 
+        $totrequired =
+            ($this->title->t != ''
                 ? $this->title->GetTextHeight($this->img) + $this->title->margin + 5 * SUPERSAMPLING_SCALE
                 : 0 ) +
-            ($this->subtitle->t != '' 
+            ($this->subtitle->t != ''
                 ? $this->subtitle->GetTextHeight($this->img) + $this->subtitle->margin + 5 * SUPERSAMPLING_SCALE
                 : 0 ) +
-            ($this->subsubtitle->t != '' 
+            ($this->subsubtitle->t != ''
                 ? $this->subsubtitle->GetTextHeight($this->img) + $this->subsubtitle->margin + 5 * SUPERSAMPLING_SCALE
                 : 0 ) ;
 
@@ -1642,7 +1642,7 @@ class Graph {
                 $this->SetMargin(
                     $this->img->raw_left_margin,
                     $this->img->raw_right_margin,
-                    $totrequired / SUPERSAMPLING_SCALE, 
+                    $totrequired / SUPERSAMPLING_SCALE,
                     $this->img->raw_bottom_margin
                 );
             }
@@ -2519,7 +2519,7 @@ class Graph {
     function StrokePlotGrad() {
         if( $this->plot_gradtype < 0  )
             return;
-            
+
         $grad = new Gradient($this->img);
         $xl = $this->img->left_margin;
         $yt = $this->img->top_margin;
@@ -2744,7 +2744,7 @@ class Graph {
             $aa = $this->img->SetAngle(0);
             $this->StrokeFrame();
             $aa = $this->img->SetAngle($aa);
-            $this->StrokeBackgroundGrad(); 
+            $this->StrokeBackgroundGrad();
             if( $this->bkg_gradtype < 0 || ($this->bkg_gradtype > 0 && $this->bkg_gradstyle==BGRAD_MARGIN) ) {
                 $this->FillPlotArea();
             }
@@ -3135,7 +3135,7 @@ class Graph {
                 $this->inputValues['aTimeout'],
                 $this->inputValues['aInline']
             );
- 
+
         if (!($this instanceof PieGraph)) {
             if ($this->isAfterSetScale) {
                 $this->SetScale(
@@ -3144,7 +3144,7 @@ class Graph {
                         $this->inputValues['aYMax'],
                         $this->inputValues['aXMin'],
                         $this->inputValues['aXMax']
-                    );       
+                    );
             }
         }
 
@@ -3954,7 +3954,7 @@ class Axis extends AxisPrototype {
             if( !$this->hide_line ) {
                 // Stroke Y-axis
                 $this->img->FilledRectangle(
-                    $pos - $this->weight + 1, 
+                    $pos - $this->weight + 1,
                     $this->img->top_margin,
                     $pos,
                     $this->img->height - $this->img->bottom_margin + $this->weight - 1
@@ -4071,12 +4071,12 @@ class Axis extends AxisPrototype {
                     }
 
                     // We number the scale from 1 and not from 0 so increase by one
-                    if( $this->scale->textscale && 
+                    if( $this->scale->textscale &&
                         $this->scale->ticks->label_formfunc == '' &&
                         ! $this->scale->ticks->HaveManualLabels() ) {
 
                         ++$label;
-                        
+
                     }
                 }
 
@@ -5218,13 +5218,13 @@ class LinearScale {
     }
 
     function __get($name) {
-        $variable_name = '_' . $name; 
+        $variable_name = '_' . $name;
 
         if (isset($this->$variable_name)) {
             return $this->$variable_name * SUPERSAMPLING_SCALE;
         } else {
             JpGraphError::RaiseL('25132', $name);
-        } 
+        }
     }
 
     function __set($name, $value) {
