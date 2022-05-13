@@ -3,7 +3,7 @@
 [![GitHub Version](https://img.shields.io/github/v/release/mitoteam/jpgraph?style=flat-square)](https://github.com/mitoteam/jpgraph)
 [![Packagist Version](https://img.shields.io/packagist/v/mitoteam/jpgraph?include_prereleases&style=flat-square)](https://packagist.org/packages/mitoteam/jpgraph)
 
-Current JpGraph library version: **4.3.5**
+Current JpGraph library version: **4.4.1**
 
 ## Usage
 
