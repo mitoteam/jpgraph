@@ -663,13 +663,13 @@ class Image {
                 for($i=0; $i < count($tmp); ++$i) {
                     $w1 = $this->GetTextWidth($tmp[$i]);
                     if( $paragraph_align=="left" ) {
-                        imagestring($this->img,$use_font,$x,$y-$h+1+$i*$fh,$tmp[$i],$this->current_color);
+                        imagestring($this->img,$use_font,(int)$x,(int)($y-$h+1+$i*$fh),$tmp[$i],$this->current_color);
                     }
                     elseif( $paragraph_align=="right" ) {
-                        imagestring($this->img,$use_font,$x+($w-$w1),$y-$h+1+$i*$fh,$tmp[$i],$this->current_color);
+                        imagestring($this->img,$use_font,(int)($x+($w-$w1)),(int)($y-$h+1+$i*$fh),$tmp[$i],$this->current_color);
                     }
                     else {
-                        imagestring($this->img,$use_font,$x+$w/2-$w1/2,$y-$h+1+$i*$fh,$tmp[$i],$this->current_color);
+                        imagestring($this->img,$use_font,(int)($x+$w/2-$w1/2),(int)($y-$h+1+$i*$fh),$tmp[$i],$this->current_color);
                     }
                 }
             }
