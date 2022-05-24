@@ -32,6 +32,8 @@ MtJpGraph::load(['bar', 'line']); # load with several modules
 $graph = new Graph(200, 300);
 ```
 
+You can call `MtJpGraph::load()` method as many times as you need everywhere in your code. Internally it checks if library or module was already loaded and does not load it another time.
+
 ## Usage WITHOUT composer
 
 Download latest version archive from [Releases](https://github.com/mitoteam/jpgraph/releases) page and unpack it.
