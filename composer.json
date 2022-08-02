@@ -13,6 +13,9 @@
   "require": {
     "php": ">=5.5"
   },
+  "replace": {
+    "jpgraph/jpgraph":"4.0.2"
+  },
   "autoload": {
     "classmap": [
       "src/MtJpGraph.php"
