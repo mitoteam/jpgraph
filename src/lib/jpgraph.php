@@ -4169,6 +4169,8 @@ class Ticks {
            $ticks_pos = array(), $maj_ticks_label = array();
     public $precision;
 
+    public $ticks_label = array(); /* mitoteam: absent in original sources */
+
     protected $minor_abs_size=3, $major_abs_size=5;
     protected $scale;
     protected $is_set=false;
