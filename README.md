@@ -1,4 +1,4 @@
-# Composer compatible JpGraph library (v4.4.1) with PHP 8.2 support
+# JpGraph library composer package with PHP 8.2 support 
 
 [![GitHub Version](https://img.shields.io/github/v/release/mitoteam/jpgraph?style=flat-square&logo=github)](https://github.com/mitoteam/jpgraph)
 [![Packagist Version](https://img.shields.io/packagist/v/mitoteam/jpgraph?include_prereleases&style=flat-square&logo=packagist)](https://packagist.org/packages/mitoteam/jpgraph)
