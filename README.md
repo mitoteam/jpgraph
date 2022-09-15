@@ -7,7 +7,7 @@
 
 [![GitHub Version](https://img.shields.io/github/v/release/mitoteam/jpgraph?style=flat-square&logo=github)](https://github.com/mitoteam/jpgraph)
 [![GitHub Release Date](https://img.shields.io/github/release-date/mitoteam/jpgraph?style=flat-square)](https://github.com/mitoteam/jpgraph/releases)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mitoteam/jpgraph)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mitoteam/jpgraph?style=flat-square)
 [![GitHub contributors](https://img.shields.io/github/contributors-anon/mitoteam/jpgraph?style=flat-square)](https://github.com/mitoteam/jpgraph/graphs/contributors)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/y/mitoteam/jpgraph?style=flat-square)](https://github.com/mitoteam/jpgraph/commits)
 
