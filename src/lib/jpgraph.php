@@ -161,6 +161,11 @@ define("_JPG_DEBUG",false);
 define("_FORCE_IMGTOFILE",false);
 define("_FORCE_IMGDIR",'/tmp/jpgimg/');
 
+//mitoteam: better Windows OS detection under Cygwin (PHP_OS_FAMILY constant supported only in PHP 7.2+)
+define(
+  "JPG_IS_WINDOWS",
+  defined("PHP_OS_FAMILY") ? PHP_OS_FAMILY === 'Windows' : strstr(PHP_OS, 'WIN')
+);
 
 //
 // Automatic settings of path for cache and font directory
@@ -168,7 +173,7 @@ define("_FORCE_IMGDIR",'/tmp/jpgimg/');
 //
 if(USE_CACHE) {
     if (!defined('CACHE_DIR')) {
-        if ( strstr( PHP_OS, 'WIN') ) {
+        if (JPG_IS_WINDOWS) { //mitoteam: better Windows OS detection under Cygwin
             if( empty($_SERVER['TEMP']) ) {
                 $t = new ErrMsgText();
                 $msg = $t->Get(11,$file,$lineno);
@@ -190,7 +195,7 @@ elseif( !defined('CACHE_DIR') ) {
 // Setup path for western/latin TTF fonts
 //
 if (!defined('TTF_DIR')) {
-    if (strstr( PHP_OS, 'WIN') ) {
+    if (JPG_IS_WINDOWS) { //mitoteam: better Windows OS detection under Cygwin
         $sroot = getenv('SystemRoot');
         if( empty($sroot) ) {
             $t = new ErrMsgText();
@@ -209,7 +214,7 @@ if (!defined('TTF_DIR')) {
 // Setup path for MultiByte TTF fonts (japanese, chinese etc.)
 //
 if (!defined('MBTTF_DIR')) {
-    if (strstr( PHP_OS, 'WIN') ) {
+    if (JPG_IS_WINDOWS) { //mitoteam: better Windows OS detection under Cygwin
         $sroot = getenv('SystemRoot');
         if( empty($sroot) ) {
             $t = new ErrMsgText();
