@@ -1,8 +1,15 @@
 # JpGraph library composer package with PHP 8.2 support 
 
-[![GitHub Version](https://img.shields.io/github/v/release/mitoteam/jpgraph?style=flat-square&logo=github)](https://github.com/mitoteam/jpgraph)
 [![Packagist Version](https://img.shields.io/packagist/v/mitoteam/jpgraph?include_prereleases&style=flat-square&logo=packagist)](https://packagist.org/packages/mitoteam/jpgraph)
 [![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/mitoteam/jpgraph?style=flat-square&logo=php)](https://github.com/mitoteam/jpgraph)
+![Packagist Total Downloads](https://img.shields.io/packagist/dt/mitoteam/jpgraph?style=flat-square)
+![Packagist Monthly Downloads](https://img.shields.io/packagist/dm/mitoteam/jpgraph?style=flat-square)
+
+[![GitHub Version](https://img.shields.io/github/v/release/mitoteam/jpgraph?style=flat-square&logo=github)](https://github.com/mitoteam/jpgraph)
+[![GitHub Release Date](https://img.shields.io/github/release-date/mitoteam/jpgraph?style=flat-square)](https://github.com/mitoteam/jpgraph/releases)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mitoteam/jpgraph)
+[![GitHub contributors](https://img.shields.io/github/contributors-anon/mitoteam/jpgraph?style=flat-square)](https://github.com/mitoteam/jpgraph/graphs/contributors)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/y/mitoteam/jpgraph?style=flat-square)](https://github.com/mitoteam/jpgraph/commits)
 
 Current JpGraph library version: **4.4.1**
 
@@ -34,7 +41,7 @@ $graph = new Graph(200, 300);
 
 You can call `MtJpGraph::load()` method as many times as you need everywhere in your code. Internally it checks if library or module was already loaded and does not load it another time.
 
-## Usage WITHOUT composer
+## Usage without composer
 
 Download latest version archive from [Releases](https://github.com/mitoteam/jpgraph/releases) page and unpack it.
 
