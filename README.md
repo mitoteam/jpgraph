@@ -2,8 +2,8 @@
 
 [![Packagist Version](https://img.shields.io/packagist/v/mitoteam/jpgraph?include_prereleases&style=flat-square&logo=packagist)](https://packagist.org/packages/mitoteam/jpgraph)
 [![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/mitoteam/jpgraph?style=flat-square&logo=php)](https://github.com/mitoteam/jpgraph)
-![Packagist Total Downloads](https://img.shields.io/packagist/dt/mitoteam/jpgraph?style=flat-square)
-![Packagist Monthly Downloads](https://img.shields.io/packagist/dm/mitoteam/jpgraph?style=flat-square)
+[![Packagist Total Downloads](https://img.shields.io/packagist/dt/mitoteam/jpgraph?style=flat-square)](https://packagist.org/packages/mitoteam/jpgraph/stats)
+[![Packagist Monthly Downloads](https://img.shields.io/packagist/dm/mitoteam/jpgraph?style=flat-square)](https://packagist.org/packages/mitoteam/jpgraph/stats)
 
 [![GitHub Version](https://img.shields.io/github/v/release/mitoteam/jpgraph?style=flat-square&logo=github)](https://github.com/mitoteam/jpgraph)
 [![GitHub Release Date](https://img.shields.io/github/release-date/mitoteam/jpgraph?style=flat-square)](https://github.com/mitoteam/jpgraph/releases)
