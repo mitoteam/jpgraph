@@ -11,7 +11,7 @@
     }
   ],
   "require": {
-    "php": ">=5.5 <=8.2"
+    "php": ">=5.5"
   },
   "replace": {
     "jpgraph/jpgraph":"4.0.2"
