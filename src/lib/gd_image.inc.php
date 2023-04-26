@@ -1230,13 +1230,13 @@ class Image {
     }
 
     function Circle($xc,$yc,$r) {
-        imageellipse($this->img,round($xc),round($yc),$r*2,$r*2,$this->current_color);
+        imageellipse($this->img,round($xc),round($yc),(float)$r*2,(float)$r*2,$this->current_color); //mitoteam: typecast added
 //        $this->DrawImageSmoothArc($this->img,round($xc),round($yc),$r*2+1,$r*2+1,0,360,$this->current_color);
 //        $this->imageSmoothCircle($this->img, round($xc),round($yc), $r*2+1, $this->current_color);
     }
 
     function FilledCircle($xc,$yc,$r) {
-        imagefilledellipse($this->img,round($xc),round($yc),2*$r,2*$r,$this->current_color);
+        imagefilledellipse($this->img,round($xc),round($yc),2*(float)$r,2*(float)$r,$this->current_color);  //mitoteam: typecast added
 //        $this->DrawImageSmoothArc($this->img, round($xc), round($yc), 2*$r, 2*$r, 0, 360, $this->current_color);
     }
 
