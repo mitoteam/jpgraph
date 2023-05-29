@@ -4065,7 +4065,7 @@ class Axis extends AxisPrototype {
                 // specified any values we use whats in the automatically asigned
                 // labels in the maj_ticks_label
                 if( isset($this->ticks_label[$i *(int)$m]) ) {
-                    $label=$this->ticks_label[$i*$m];
+                    $label=$this->ticks_label[$i*(int)$m]; //mitoteam: typecast added
                 }
                 else {
                     if( $aAbsLabel ) {
