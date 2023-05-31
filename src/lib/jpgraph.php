@@ -4065,7 +4065,7 @@ class Axis extends AxisPrototype {
                 // specified any values we use whats in the automatically asigned
                 // labels in the maj_ticks_label
                 if( isset($this->ticks_label[$i *(int)$m]) ) {
-                    $label=$this->ticks_label[$i*(int)$m]; //mitoteam: typecast added
+                    $label=$this->ticks_label[$i*(int)$m]; // MiTo Team: explicit type casting
                 }
                 else {
                     if( $aAbsLabel ) {
@@ -4174,7 +4174,7 @@ class Ticks {
            $ticks_pos = array(), $maj_ticks_label = array();
     public $precision;
 
-    public $ticks_label = array(); /* mitoteam: absent in original sources */
+    public $ticks_label = array(); // MiTo Team: explicit class member declared
 
     protected $minor_abs_size=3, $major_abs_size=5;
     protected $scale;

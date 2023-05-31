@@ -82,7 +82,7 @@ class Spline {
 
         // Binary search to find interval
         while( $max-$min > 1 ) {
-            $k = (int) floor(($max+$min) / 2);
+            $k = (int) floor(($max+$min) / 2); // MiTo Team: explicit type casting
             if( $this->xdata[$k] > $xpoint )
             $max=$k;
             else
