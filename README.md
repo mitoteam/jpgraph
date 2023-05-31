@@ -1,4 +1,4 @@
-# JpGraph library composer package with PHP 8.2 support 
+# JpGraph library composer package with PHP 8.2 support
 
 [![Packagist Version](https://img.shields.io/packagist/v/mitoteam/jpgraph?include_prereleases&style=flat-square&logo=packagist)](https://packagist.org/packages/mitoteam/jpgraph)
 [![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/mitoteam/jpgraph?style=flat-square&logo=php)](https://github.com/mitoteam/jpgraph)
@@ -34,6 +34,8 @@ MtJpGraph::load();                # not really useful without modules
 MtJpGraph::load('bar');           # load with single module
 //or
 MtJpGraph::load(['bar', 'line']); # load with several modules
+//or
+MtJpGraph::load(['bar', 'line'], true); # load with several modules in Extended Mode (see below)
 
 //using original JpGraph classes
 $graph = new Graph(200, 300);
@@ -53,10 +55,18 @@ At 2022-02-25 we decided to switch to version number **10.0.0** to leave some ma
 
 Current version numbers:
 
-* **Version 10.2.x** of this package is latest version of JpGraph library with php **8.2** compatibility patches (latest code in "main" branch).
+* **Version 10.3.x** of this package is latest version of JpGraph library with php **8.2** compatibility patches (latest code in "main" branch). Can be loaded in Extended Mode (see below).
 * **Version 4.4.x** of this package provides latest version of original JpGraph library as-is without any compatibility patches (latest code in "original" branch).
 
 All changes to the original library can be examined as [difference between **main** and **original** branches](https://github.com/mitoteam/jpgraph/compare/original..main#files_bucket).
+
+## Extended Mode
+
+We started with just patches for compatibility with PHP 8.1 and 8.2. Before version 10.3 there were no any changes to original code except adding some typecasting or declaring some class members explicitly.
+
+But after library was used wider there were some bugs discovered in original code. We aware to change functionality of the original library so **Extended Mode** was introduced in version **10.3.0**. Now you can pass `true` as second argument to `MtJpGraph::load()` method to enable Extended Mode. This will enable several more patches to the original code to overcome some bugs.
+
+Extended Mode is disabled by default, you can enable it explicitly only.
 
 ## Links
 
