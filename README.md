@@ -7,11 +7,11 @@
 
 [![GitHub Version](https://img.shields.io/github/v/release/mitoteam/jpgraph?style=flat-square&logo=github)](https://github.com/mitoteam/jpgraph)
 [![GitHub Release Date](https://img.shields.io/github/release-date/mitoteam/jpgraph?style=flat-square)](https://github.com/mitoteam/jpgraph/releases)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mitoteam/jpgraph?style=flat-square)
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mitoteam/jpgraph?style=flat-square)
 [![GitHub contributors](https://img.shields.io/github/contributors-anon/mitoteam/jpgraph?style=flat-square)](https://github.com/mitoteam/jpgraph/graphs/contributors)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/y/mitoteam/jpgraph?style=flat-square)](https://github.com/mitoteam/jpgraph/commits)
 
-Current JpGraph library version: **4.4.1**
+Current JpGraph library version: **4.4.2**
 
 PHP versions support: from 5.5 to **8.2**. [Original notes](https://jpgraph.net/download/manuals/chunkhtml/ch01s05.html) about PHP versions.
 
