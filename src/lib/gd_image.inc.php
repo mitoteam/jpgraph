@@ -718,6 +718,9 @@ class Image {
 
     function imagettfbbox_fixed($size, $angle, $fontfile, $text) {
 
+	if($text === '') {
+            return [-1, 1, 1, 1, 1, -1, -1, -1];
+        }
 
         if( ! USE_LIBRARY_IMAGETTFBBOX ) {
 
@@ -930,9 +933,11 @@ class Image {
                     // This is only support for text at 0 degree !!
                     // Do nothing the text is drawn at baseline by default
                 }
-            } 
-            ImageTTFText ($this->img, $this->font_size, $dir, (int)$x, (int)$y,
+            }
+	    if($txt !== '') {
+            	ImageTTFText ($this->img, $this->font_size, $dir, (int)$x, (int)$y,
                           $this->current_color,$this->font_file,$txt);
+	    }
 
             // Calculate and return the co-ordinates for the bounding box
             $box = $this->imagettfbbox_fixed($this->font_size,$dir,$this->font_file,$txt);
@@ -1038,13 +1043,15 @@ class Image {
                 $xl -= $bbox[0]/2;
                 $yl = $y - $yadj;
                 //$xl = $xl- $xadj;
-                ImageTTFText($this->img, $this->font_size, $dir, (int)$xl, (int)($yl-($h-$fh)+$fh*$i),
+		if($tmp[$i] !== '') {
+                	ImageTTFText($this->img, $this->font_size, $dir, (int)$xl, (int)($yl-($h-$fh)+$fh*$i),
                              $this->current_color,$this->font_file,$tmp[$i]);
+		}
 
                // echo "xl=$xl,".$tmp[$i]." <br>";
                 if( $debug  ) {
                     // Draw the bounding rectangle around each line
-                    $box=@ImageTTFBBox($this->font_size,$dir,$this->font_file,$tmp[$i]);
+                    $box=$this->getimagettfbbox_fixed($this->font_size,$dir,$this->font_file,$tmp[$i]);
                     $p = array();
                     for($j=0; $j < 4; ++$j) {
                         $p[] = $bbox[$j*2]+$xl;
