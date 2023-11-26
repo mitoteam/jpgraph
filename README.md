@@ -55,7 +55,7 @@ At 2022-02-25 we decided to switch to version number **10.0.0** to leave some ma
 
 Current version numbers:
 
-* **Version 10.3.x** of this package is latest version of JpGraph library with php **8.3** compatibility patches (latest code in "main" branch). Can be loaded in Extended Mode (see below).
+* **Version 10.4.x** of this package is latest version of JpGraph library with php **8.2-8.3** compatibility patches (latest code in "main" branch). Can be loaded in Extended Mode (see below).
 * **Version 4.4.x** of this package provides latest version of original JpGraph library as-is without any compatibility patches (latest code in "original" branch).
 
 All changes to the original library can be examined as [difference between **main** and **original** branches](https://github.com/mitoteam/jpgraph/compare/original..main#files_bucket).
