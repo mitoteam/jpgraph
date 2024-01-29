@@ -14,7 +14,8 @@
     "php": ">=5.5"
   },
   "replace": {
-    "jpgraph/jpgraph":"4.0.2"
+    "jpgraph/jpgraph": "4.0.2",
+    "rulin132/jpgraph": "4.3.5"
   },
   "autoload": {
     "classmap": [
