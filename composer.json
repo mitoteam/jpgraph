@@ -7,7 +7,15 @@
   "license": "QPL-1.0",
   "authors": [
     {
-      "name": "JpGraph team"
+      "name": "JpGraph team",
+      "homepage": "https://jpgraph.net",
+      "role": "Original Library Developers"
+    },
+    {
+        "name": "MiTo Team",
+        "email": "info@mito-team.com",
+        "homepage": "https://www.mito-team.com",
+        "role": "Composer package maintenance, PHP-compatibility patches"
     }
   ],
   "require": {
