@@ -73,3 +73,7 @@ Extended Mode is disabled by default, you can enable it explicitly only.
 * Original JpGraph website: https://jpgraph.net
 * Documentation: https://jpgraph.net/doc/
 * Examples: https://jpgraph.net/features/gallery.php
+
+## Star History
+
+![Star History Chart](https://api.star-history.com/svg?repos=mitoteam/jpgraph&type=Date)
