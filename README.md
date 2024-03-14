@@ -76,4 +76,4 @@ Extended Mode is disabled by default, you can enable it explicitly only.
 
 ## Star History
 
-![Star History Chart](https://api.star-history.com/svg?repos=mitoteam/jpgraph&type=Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=mitoteam/jpgraph&type=Date)](https://star-history.com/#mitoteam/jpgraph&Date)
