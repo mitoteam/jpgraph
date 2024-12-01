@@ -23,7 +23,7 @@ function mt_stroke($graph, $filename)
 #endregion
 
 #region Simple line
-$graph = new Graph(300,250);
+$graph = new Graph(300, 250);
 $graph->SetScale("textlin");
 
 $graph->SetTheme(new UniversalTheme());
@@ -41,7 +41,7 @@ mt_stroke($graph, 'line');
 #endregion
 
 #region Simple bar
-$graph = new Graph(300,200);
+$graph = new Graph(300, 200);
 $graph->SetScale('intlin');
 
 // Create a bar pot
