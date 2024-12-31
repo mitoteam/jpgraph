@@ -9,10 +9,28 @@ final class MtJpGraph
    */
   private static $_loaded = array();
 
-  /**
-   * MiToTeam: Extended mode flag. See README.md for the details.
-   */
-  private static $_extended_mode = false;
+  //global MtJpGraph options
+  private static $options = array(
+    'extended'               => false, // MiToTeam: Extended mode flag. See README.md for the details.
+    'skip_exception_handler' => false, // MiToTeam: Do not set JpGraph's custom exception handler
+  );
+
+  public static function setOption($name, $value)
+  {
+    self::$options[$name] = $value;
+  }
+
+  public static function getOption($name)
+  {
+    if (isset(self::$options[$name]))
+    {
+      return self::$options[$name];
+    }
+    else
+    {
+      return null;
+    }
+  }
 
   /**
    * Loads jpgraph library.
@@ -61,7 +79,7 @@ final class MtJpGraph
       }
     }
 
-    self::$_extended_mode = self::$_extended_mode || $extended_mode;
+    self::setOption('extended', self::getOption('extended') || $extended_mode);
   }
 
   /**
@@ -69,6 +87,16 @@ final class MtJpGraph
    */
   public static function isExtendedMode()
   {
-    return self::$_extended_mode;
+    return (bool)self::getOption('extended');
+  }
+
+  public static function setSkipExceptionHandler($value)
+  {
+    self::setOption('skip_exception_handler', (bool) $value);
+  }
+
+  public static function isSkipExceptionHandler()
+  {
+    return (bool) self::getOption('skip_exception_handler');
   }
 }
