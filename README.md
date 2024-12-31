@@ -68,6 +68,14 @@ But after library was used wider there were some bugs discovered in original cod
 
 Extended Mode is disabled by default, you can enable it explicitly only.
 
+### Custom exception handler
+
+jpgraph sets custom exceptions handler internally to be able to draw error message in picture if some exception pops up. It restores old exception handler if any was set after exception processing. This behavior can interfere with some tests runners which are using own exception handlers. For example [phpunit](https://github.com/sebastianbergmann/phpunit) marks tests as _risky_ with message "Test code or tested code did not remove its own exception handlers".
+
+It is possible to disable custom jpgraph's exceptions handler by calling `MtJpGraph::setSkipExceptionHandler(true);` before first call to `MtJpGraph::load()`. 
+
+**Please note**: this intended to be used in tests context only should not be used in production mode.
+
 ## Links
 
 * Original JpGraph website: https://jpgraph.net

@@ -4,11 +4,6 @@ namespace mitoteam\jpgraph;
 
 final class MtJpGraph
 {
-  /**
-   * MiToTeam: List of already loaded modules. Empty string ('') is added when loading library itself.
-   */
-  private static $_loaded = array();
-
   //global MtJpGraph options
   private static $options = array(
     'extended'               => false, // MiToTeam: Extended mode flag. See README.md for the details.
@@ -31,6 +26,11 @@ final class MtJpGraph
       return null;
     }
   }
+
+  /**
+   * MiToTeam: List of already loaded modules. Empty string ('') is added when loading library itself.
+   */
+  private static $_loaded = array();
 
   /**
    * Loads jpgraph library.
@@ -83,18 +83,30 @@ final class MtJpGraph
   }
 
   /**
-   * Returns true if library was added in Extended Mode (with not just compatibility patches but with some functionality fixed as well).
+   * Returns true if library was added in Extended Mode (with not just compatibility patches but with some functionality
+   * fixed as well).
+   * @return bool
    */
   public static function isExtendedMode()
   {
     return (bool)self::getOption('extended');
   }
 
+  /**
+   * Disable setting custom exception handler by jpgraph. Useful when running library code in some tests context (like
+   * phpunit for example).
+   * @param bool $value
+   * @return void
+   */
   public static function setSkipExceptionHandler($value)
   {
     self::setOption('skip_exception_handler', (bool) $value);
   }
 
+  /**
+   * Returns true if setting custom exception handler is disabled.
+   * @return bool
+   */
   public static function isSkipExceptionHandler()
   {
     return (bool) self::getOption('skip_exception_handler');
