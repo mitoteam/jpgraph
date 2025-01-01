@@ -2,6 +2,12 @@
 
 namespace mitoteam\jpgraph;
 
+//MiTo Team: set defaults for known test environment
+if (defined('PHPUNIT_COMPOSER_INSTALL'))
+{
+  MtJpGraph::setSkipExceptionHandler(true);
+}
+
 final class MtJpGraph
 {
   //global MtJpGraph options
