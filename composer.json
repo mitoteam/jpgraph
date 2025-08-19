@@ -1,7 +1,7 @@
 {
   "name": "mitoteam/jpgraph",
   "type": "library",
-  "description": "JpGraph library composer package with PHP 8.4 support",
+  "description": "JpGraph library composer package with PHP 8.5 support",
   "keywords": ["jpgraph"],
   "homepage": "https://github.com/mitoteam/jpgraph",
   "license": "QPL-1.0",
