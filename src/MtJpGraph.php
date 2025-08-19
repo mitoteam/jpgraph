@@ -2,7 +2,7 @@
 
 namespace mitoteam\jpgraph;
 
-//MiTo Team: set defaults for known test environment
+//Set defaults for known test environment
 if (defined('PHPUNIT_COMPOSER_INSTALL'))
 {
   MtJpGraph::setSkipExceptionHandler(true);
@@ -12,8 +12,8 @@ final class MtJpGraph
 {
   //global MtJpGraph options
   private static $options = array(
-    'extended'               => false, // MiToTeam: Extended mode flag. See README.md for the details.
-    'skip_exception_handler' => false, // MiToTeam: Do not set JpGraph's custom exception handler
+    'extended'               => false, // Extended mode flag. See README.md for the details.
+    'skip_exception_handler' => false, // Do not set JpGraph's custom exception handler
   );
 
   public static function setOption($name, $value)

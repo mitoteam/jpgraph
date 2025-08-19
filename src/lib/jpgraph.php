@@ -161,7 +161,7 @@ define("_JPG_DEBUG",false);
 define("_FORCE_IMGTOFILE",false);
 define("_FORCE_IMGDIR",'/tmp/jpgimg/');
 
-//mitoteam: better Windows OS detection under Cygwin (PHP_OS_FAMILY constant supported only in PHP 7.2+)
+//MiToTeam: better Windows OS detection under Cygwin (PHP_OS_FAMILY constant supported only in PHP 7.2+)
 define(
   "JPG_IS_WINDOWS",
   defined("PHP_OS_FAMILY") ? PHP_OS_FAMILY === 'Windows' : strstr(PHP_OS, 'WIN')
@@ -173,7 +173,7 @@ define(
 //
 if(USE_CACHE) {
     if (!defined('CACHE_DIR')) {
-        if (JPG_IS_WINDOWS) { //mitoteam: better Windows OS detection under Cygwin
+        if (JPG_IS_WINDOWS) { //MiToTeam: better Windows OS detection under Cygwin
             if( empty($_SERVER['TEMP']) ) {
                 $t = new ErrMsgText();
                 $msg = $t->Get(11,$file,$lineno);
@@ -195,7 +195,7 @@ elseif( !defined('CACHE_DIR') ) {
 // Setup path for western/latin TTF fonts
 //
 if (!defined('TTF_DIR')) {
-    if (JPG_IS_WINDOWS) { //mitoteam: better Windows OS detection under Cygwin
+    if (JPG_IS_WINDOWS) { //MiToTeam: better Windows OS detection under Cygwin
         $sroot = getenv('SystemRoot');
         if( empty($sroot) ) {
             $t = new ErrMsgText();
@@ -214,7 +214,7 @@ if (!defined('TTF_DIR')) {
 // Setup path for MultiByte TTF fonts (japanese, chinese etc.)
 //
 if (!defined('MBTTF_DIR')) {
-    if (JPG_IS_WINDOWS) { //mitoteam: better Windows OS detection under Cygwin
+    if (JPG_IS_WINDOWS) { //MiToTeam: better Windows OS detection under Cygwin
         $sroot = getenv('SystemRoot');
         if( empty($sroot) ) {
             $t = new ErrMsgText();
@@ -1405,7 +1405,7 @@ class Graph {
     function StrokeCSIM($aScriptName='auto',$aCSIMName='',$aBorder=0) {
         if( $aCSIMName=='' ) {
             // create a random map name
-            srand ((int)((float) microtime() * 1000000)); // MiTo Team: explicit type casting
+            srand ((int)((float) microtime() * 1000000)); //MiToTeam: explicit type casting
             $r = rand(0,100000);
             $aCSIMName='__mapname'.$r.'__';
         }
@@ -4065,7 +4065,7 @@ class Axis extends AxisPrototype {
                 // specified any values we use whats in the automatically asigned
                 // labels in the maj_ticks_label
                 if( isset($this->ticks_label[$i *(int)$m]) ) {
-                    $label=$this->ticks_label[$i*(int)$m]; // MiTo Team: explicit type casting
+                    $label=$this->ticks_label[$i*(int)$m]; //MiToTeam: explicit type casting
                 }
                 else {
                     if( $aAbsLabel ) {
@@ -4174,7 +4174,7 @@ class Ticks {
            $ticks_pos = array(), $maj_ticks_label = array();
     public $precision;
 
-    public $ticks_label = array(); // MiTo Team: explicit class member declared
+    public $ticks_label = array(); //MiToTeam: explicit class member declared
 
     protected $minor_abs_size=3, $major_abs_size=5;
     protected $scale;

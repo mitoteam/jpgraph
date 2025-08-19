@@ -844,7 +844,7 @@ class AccBarPlot extends BarPlot {
             $y=0;
             if( !isset($this->plots[0]->coords[0][$i]) ) {
                 if(mitoteam\jpgraph\MtJpGraph::isExtendedMode()) {
-                    continue; // MiTo Team: ignore different number of datapoints
+                    continue; //MiToTeam: ignore different number of datapoints
                 } else {
                     JpGraphError::RaiseL(2014);
                 }
@@ -854,7 +854,7 @@ class AccBarPlot extends BarPlot {
             for( $j = 1; $j < $this->nbrplots; $j++ ) {
                 if( !isset($this->plots[$j]->coords[0][$i]) ) {
                     if(mitoteam\jpgraph\MtJpGraph::isExtendedMode()) {
-                        continue; // MiTo Team: ignore different number of datapoints
+                        continue; //MiToTeam: ignore different number of datapoints
                     } else {
                         JpGraphError::RaiseL(2014);
                     }

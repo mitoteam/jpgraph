@@ -663,13 +663,13 @@ class Image {
                 for($i=0; $i < count($tmp); ++$i) {
                     $w1 = $this->GetTextWidth($tmp[$i]);
                     if( $paragraph_align=="left" ) {
-                        imagestring($this->img,$use_font,(int)$x,(int)($y-$h+1+$i*$fh),$tmp[$i],$this->current_color); // MiTo Team: explicit type casting
+                        imagestring($this->img,$use_font,(int)$x,(int)($y-$h+1+$i*$fh),$tmp[$i],$this->current_color); //MiToTeam: explicit type casting
                     }
                     elseif( $paragraph_align=="right" ) {
-                        imagestring($this->img,$use_font,(int)($x+($w-$w1)),(int)($y-$h+1+$i*$fh),$tmp[$i],$this->current_color); // MiTo Team: explicit type casting
+                        imagestring($this->img,$use_font,(int)($x+($w-$w1)),(int)($y-$h+1+$i*$fh),$tmp[$i],$this->current_color); //MiToTeam: explicit type casting
                     }
                     else {
-                        imagestring($this->img,$use_font,(int)($x+$w/2-$w1/2),(int)($y-$h+1+$i*$fh),$tmp[$i],$this->current_color); // MiTo Team: explicit type casting
+                        imagestring($this->img,$use_font,(int)($x+$w/2-$w1/2),(int)($y-$h+1+$i*$fh),$tmp[$i],$this->current_color); //MiToTeam: explicit type casting
                     }
                 }
             }
@@ -1230,13 +1230,13 @@ class Image {
     }
 
     function Circle($xc,$yc,$r) {
-        imageellipse($this->img,round($xc),round($yc),(float)$r*2,(float)$r*2,$this->current_color); // MiTo Team: explicit type casting
+        imageellipse($this->img,round($xc),round($yc),(float)$r*2,(float)$r*2,$this->current_color); //MiToTeam: explicit type casting
 //        $this->DrawImageSmoothArc($this->img,round($xc),round($yc),$r*2+1,$r*2+1,0,360,$this->current_color);
 //        $this->imageSmoothCircle($this->img, round($xc),round($yc), $r*2+1, $this->current_color);
     }
 
     function FilledCircle($xc,$yc,$r) {
-        imagefilledellipse($this->img,round($xc),round($yc),2*(float)$r,2*(float)$r,$this->current_color); // MiTo Team: explicit type casting
+        imagefilledellipse($this->img,round($xc),round($yc),2*(float)$r,2*(float)$r,$this->current_color); //MiToTeam: explicit type casting
 //        $this->DrawImageSmoothArc($this->img, round($xc), round($yc), 2*$r, 2*$r, 0, 360, $this->current_color);
     }
 

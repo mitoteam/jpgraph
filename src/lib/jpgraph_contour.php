@@ -31,7 +31,7 @@ class Contour {
     private $invert = true;
     private $highcontrast = false, $highcontrastbw = false;
 
-    private $edges = array(); // MiTo Team: explicit class member declared
+    private $edges = array(); //MiToTeam: explicit class member declared
 
     /**
      * Create a new contour level "algorithm machine".
@@ -389,7 +389,7 @@ class Contour {
 class ContourPlot extends Plot {
 
     private $contour, $contourCoord, $contourVal, $contourColor;
-    private $nbrContours = 0 ; // MiTo Team: was $nbrCountours in original sources
+    private $nbrContours = 0 ; //MiToTeam: was $nbrCountours in original sources
 
     private $dataMatrix = array();
     private $invertLegend = false;

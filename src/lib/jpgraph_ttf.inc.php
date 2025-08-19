@@ -489,7 +489,7 @@ class TTF {
                 JpGraphError::RaiseL(25048,$fam);//("Unknown font style specification [$fam].");
             }
 
-            // MiTo Team: if absolute path provided check if file exists
+            //MiToTeam: if absolute path provided check if file exists
             if($font_file[0] === DIRECTORY_SEPARATOR) {
               if (file_exists($font_file) === true && is_readable($font_file) === true) {
                 break;

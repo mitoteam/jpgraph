@@ -13,7 +13,7 @@
 // Defines for PiePlot::SetLabelType()
 define("PIE_VALUE_ABS",1);
 define("PIE_VALUE_PER",0);
-//MiTo Team: PIE_VALUE_PERCENTAGE is not used in jpgraph but interferes with same constant in https://github.com/szymach/c-pchart
+//MiToTeam: PIE_VALUE_PERCENTAGE is not used in jpgraph but interferes with same constant in https://github.com/szymach/c-pchart
 //define it only if not defined yet
 if(!defined("PIE_VALUE_PERCENTAGE")) {
     define("PIE_VALUE_PERCENTAGE", 0);
