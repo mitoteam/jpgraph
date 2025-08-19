@@ -152,7 +152,7 @@ class Bezier {
         $datax = array();
         $datay = array();
         for ($i = 0; $i < $steps; $i++) {
-            list($datumx, $datumy) = $this->GetPoint((double) $i / (double) $steps);
+            list($datumx, $datumy) = $this->GetPoint((float) $i / (float) $steps); // MiTo Team: Non-canonical scalar type casts (php 8.5)
             $datax[$i] = $datumx;
             $datay[$i] = $datumy;
         }
@@ -182,7 +182,7 @@ class Bezier {
         $newy = 0.0;
 
         $muk = 1.0;
-        $munk = (double) pow(1-$mu,(double) $n);
+        $munk = (float) pow(1-$mu, (float) $n); // MiTo Team: Non-canonical scalar type casts (php 8.5)
 
         for ($k = 0; $k <= $n; $k++) {
             $nn = $n;
@@ -195,11 +195,11 @@ class Bezier {
                 $blend *= $nn;
                 $nn--;
                 if ($kn > 1) {
-                    $blend /= (double) $kn;
+                    $blend /= (float) $kn; // MiTo Team: Non-canonical scalar type casts (php 8.5)
                     $kn--;
                 }
                 if ($nkn > 1) {
-                    $blend /= (double) $nkn;
+                    $blend /= (float) $nkn; // MiTo Team: Non-canonical scalar type casts (php 8.5)
                     $nkn--;
                 }
             }

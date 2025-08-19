@@ -1405,7 +1405,7 @@ class Graph {
     function StrokeCSIM($aScriptName='auto',$aCSIMName='',$aBorder=0) {
         if( $aCSIMName=='' ) {
             // create a random map name
-            srand ((int)((double) microtime() * 1000000)); // MiTo Team: explicit type casting
+            srand ((int)((float) microtime() * 1000000)); // MiTo Team: explicit type casting
             $r = rand(0,100000);
             $aCSIMName='__mapname'.$r.'__';
         }
