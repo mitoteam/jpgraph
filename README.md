@@ -55,7 +55,7 @@ At 2022-02-25 we decided to switch to version number **10.0.0** to leave some ma
 
 Current version numbers:
 
-* **Version 10.4.x** of this package is the latest version of JpGraph library with php **8.2-8.5** compatibility patches (latest code in "main" branch). Can be loaded in Extended Mode (see below).
+* **Version 10.5.x** of this package is the latest version of JpGraph library with php **8.2-8.5** compatibility patches (latest code in "main" branch). Can be loaded in Extended Mode (see below).
 * **Version 4.4.x** of this package provides latest version of original JpGraph library as-is without any compatibility patches (latest code in "original" branch).
 
 All changes to the original library can be examined as [difference between **main** and **original** branches](https://github.com/mitoteam/jpgraph/compare/original..main#files_bucket).
@@ -74,7 +74,7 @@ jpgraph sets custom exceptions handler internally to be able to draw error messa
 
 It is possible to disable custom jpgraph's exceptions handler by calling explicitly `MtJpGraph::setSkipExceptionHandler(true);` before first call to `MtJpGraph::load()`. MtJpGraph checks if `PHPUNIT_COMPOSER_INSTALL` constant defined and disables jpgraph's exceptions handler implicitly for phpunit.
 
-**Please note**: this intended to be used in tests context only should not be used in production mode.
+**Please note**: this intended to be used in tests context only and should not be used in production mode.
 
 ## Links
 
