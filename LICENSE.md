@@ -7,4 +7,4 @@ All additions and patches from MiTo Team are licensed under [MIT License](https:
  
  * Composer package and config
  * MtJpGraph class (library loader)
- * All library code patches (diff between original and main branches)
+ * All library code patches ([difference between **main** and **original** branches](https://github.com/mitoteam/jpgraph/compare/original..main#files_bucket))
