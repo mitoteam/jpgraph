@@ -60,6 +60,22 @@ Current version numbers:
 
 All changes to the original library can be examined as [difference between **main** and **original** branches](https://github.com/mitoteam/jpgraph/compare/original..main#files_bucket).
 
+## Overriding jpgraph's settings
+
+A lot of original jpgraph's settings are defined as constants in `jpg-config.inc.php` and `jpgraph_ttf.inc.php` files. We wrapped all these constants definitions with `if(!defined())` checks. So you can define them with required values **before** loading MtJpGraph. See Issue #24 for the details.
+
+Code example:
+
+```php
+use mitoteam\jpgraph\MtJpGraph;
+
+//first define required constants
+define('CACHE_FILE_GROUP', 'supergroup');
+
+// and then load library and modules
+MtJpGraph::load('bar');
+```
+
 ## Extended Mode
 
 We started with just patches for compatibility with recent PHP versions. Before version 10.3 there were no any changes to original code except adding some typecasting or declaring some class members explicitly.
