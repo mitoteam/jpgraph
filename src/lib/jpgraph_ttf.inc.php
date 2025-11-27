@@ -8,43 +8,46 @@
 // Copyright (c) Asial Corporation. All rights reserved.
 //========================================================================
 
+//MiToTeam: All constants define() calls wrapped with if(!defined()) check. So you can define those constants in calling code
+//before using jpgraph if you need to change some values.
+
 // TTF Font families
-define("FF_COURIER",10);
-define("FF_VERDANA",11);
-define("FF_TIMES",12);
-define("FF_COMIC",14);
-define("FF_ARIAL",15);
-define("FF_GEORGIA",16);
-define("FF_TREBUCHE",17);
+if(!defined('FF_COURIER')) define("FF_COURIER",10);
+if(!defined('FF_VERDANA')) define("FF_VERDANA",11);
+if(!defined('FF_TIMES')) define("FF_TIMES",12);
+if(!defined('FF_COMIC')) define("FF_COMIC",14);
+if(!defined('FF_ARIAL')) define("FF_ARIAL",15);
+if(!defined('FF_GEORGIA')) define("FF_GEORGIA",16);
+if(!defined('FF_TREBUCHE')) define("FF_TREBUCHE",17);
 
 // Gnome Vera font
 // Available from http://www.gnome.org/fonts/
-define("FF_VERA",18);
-define("FF_VERAMONO",19);
-define("FF_VERASERIF",20);
+if(!defined('FF_VERA')) define("FF_VERA",18);
+if(!defined('FF_VERAMONO')) define("FF_VERAMONO",19);
+if(!defined('FF_VERASERIF')) define("FF_VERASERIF",20);
 
 // Chinese font
-define("FF_SIMSUN",30);
-define("FF_CHINESE",31);
-define("FF_BIG5",32);
+if(!defined('FF_SIMSUN')) define("FF_SIMSUN",30);
+if(!defined('FF_CHINESE')) define("FF_CHINESE",31);
+if(!defined('FF_BIG5')) define("FF_BIG5",32);
 
 // Japanese font
-define("FF_MINCHO",40);
-define("FF_PMINCHO",41);
-define("FF_GOTHIC",42);
-define("FF_PGOTHIC",43);
+if(!defined('FF_MINCHO')) define("FF_MINCHO",40);
+if(!defined('FF_PMINCHO')) define("FF_PMINCHO",41);
+if(!defined('FF_GOTHIC')) define("FF_GOTHIC",42);
+if(!defined('FF_PGOTHIC')) define("FF_PGOTHIC",43);
 
 // Hebrew fonts
-define("FF_DAVID",44);
-define("FF_MIRIAM",45);
-define("FF_AHRON",46);
+if(!defined('FF_DAVID')) define("FF_DAVID",44);
+if(!defined('FF_MIRIAM')) define("FF_MIRIAM",45);
+if(!defined('FF_AHRON')) define("FF_AHRON",46);
 
 // Dejavu-fonts http://sourceforge.net/projects/dejavu
-define("FF_DV_SANSSERIF",47);
-define("FF_DV_SERIF",48);
-define("FF_DV_SANSSERIFMONO",49);
-define("FF_DV_SERIFCOND",50);
-define("FF_DV_SANSSERIFCOND",51);
+if(!defined('FF_DV_SANSSERIF')) define("FF_DV_SANSSERIF",47);
+if(!defined('FF_DV_SERIF')) define("FF_DV_SERIF",48);
+if(!defined('FF_DV_SANSSERIFMONO')) define("FF_DV_SANSSERIFMONO",49);
+if(!defined('FF_DV_SERIFCOND')) define("FF_DV_SERIFCOND",50);
+if(!defined('FF_DV_SANSSERIFCOND')) define("FF_DV_SANSSERIFCOND",51);
 
 // Extra fonts
 // Download fonts from
@@ -54,30 +57,30 @@ define("FF_DV_SANSSERIFCOND",51);
 // http://www.fontspace.com/category/famous
 
 // define("FF_SPEEDO",71);  // This font is also known as Bauer (Used for development gauge fascia)
-define("FF_DIGITAL",72); // Digital readout font
-define("FF_COMPUTER",73); // The classic computer font
-define("FF_CALCULATOR",74); // Triad font
+if(!defined('FF_DIGITAL')) define("FF_DIGITAL",72); // Digital readout font
+if(!defined('FF_COMPUTER')) define("FF_COMPUTER",73); // The classic computer font
+if(!defined('FF_CALCULATOR')) define("FF_CALCULATOR",74); // Triad font
 
-define("FF_USERFONT",90);
-define("FF_USERFONT1",90);
-define("FF_USERFONT2",91);
-define("FF_USERFONT3",92);
+if(!defined('FF_USERFONT')) define("FF_USERFONT",90);
+if(!defined('FF_USERFONT1')) define("FF_USERFONT1",90);
+if(!defined('FF_USERFONT2')) define("FF_USERFONT2",91);
+if(!defined('FF_USERFONT3')) define("FF_USERFONT3",92);
 
 // Limits for fonts
-define("_FIRST_FONT",10);
-define("_LAST_FONT",99);
+if(!defined('_FIRST_FONT')) define("_FIRST_FONT",10);
+if(!defined('_LAST_FONT')) define("_LAST_FONT",99);
 
 // TTF Font styles
-define("FS_NORMAL",9001);
-define("FS_BOLD",9002);
-define("FS_ITALIC",9003);
-define("FS_BOLDIT",9004);
-define("FS_BOLDITALIC",9004);
+if(!defined('FS_NORMAL')) define("FS_NORMAL",9001);
+if(!defined('FS_BOLD')) define("FS_BOLD",9002);
+if(!defined('FS_ITALIC')) define("FS_ITALIC",9003);
+if(!defined('FS_BOLDIT')) define("FS_BOLDIT",9004);
+if(!defined('FS_BOLDITALIC')) define("FS_BOLDITALIC",9004);
 
 //Definitions for internal font
-define("FF_FONT0",1);
-define("FF_FONT1",2);
-define("FF_FONT2",4);
+if(!defined('FF_FONT0')) define("FF_FONT0",1);
+if(!defined('FF_FONT1')) define("FF_FONT1",2);
+if(!defined('FF_FONT2')) define("FF_FONT2",4);
 
 //------------------------------------------------------------------------
 // Defines for font setup
@@ -86,22 +89,22 @@ define("FF_FONT2",4);
 // Actual name of the TTF file used together with FF_CHINESE aka FF_BIG5
 // This is the TTF file being used when the font family is specified as
 // either FF_CHINESE or FF_BIG5
-define('CHINESE_TTF_FONT','bkai00mp.ttf');
+if(!defined('CHINESE_TTF_FONT')) define('CHINESE_TTF_FONT','bkai00mp.ttf');
 
 // Special unicode greek language support
-define("LANGUAGE_GREEK",false);
+if(!defined('LANGUAGE_GREEK')) define("LANGUAGE_GREEK",false);
 
 // If you are setting this config to true the conversion of greek characters
 // will assume that the input text is windows 1251
-define("GREEK_FROM_WINDOWS",false);
+if(!defined('GREEK_FROM_WINDOWS')) define("GREEK_FROM_WINDOWS",false);
 
 // Special unicode cyrillic language support
-define("LANGUAGE_CYRILLIC",false);
+if(!defined('LANGUAGE_CYRILLIC')) define("LANGUAGE_CYRILLIC",false);
 
 // If you are setting this config to true the conversion
 // will assume that the input text is windows 1251, if
 // false it will assume koi8-r
-define("CYRILLIC_FROM_WINDOWS",false);
+if(!defined('CYRILLIC_FROM_WINDOWS')) define("CYRILLIC_FROM_WINDOWS",false);
 
 // The following constant is used to auto-detect
 // whether cyrillic conversion is really necessary
@@ -128,24 +131,24 @@ define("CYRILLIC_FROM_WINDOWS",false);
 // where $locale_char_set is a GLOBAL (string) variable
 // from the application including JpGraph.
 //
-define('LANGUAGE_CHARSET', null);
+if(!defined('LANGUAGE_CHARSET')) define("LANGUAGE_CHARSET", null);
 
 // Japanese TrueType font used with FF_MINCHO, FF_PMINCHO, FF_GOTHIC, FF_PGOTHIC
 // Standard fonts from Infomation-technology Promotion Agency (IPA)
 // See http://mix-mplus-ipa.sourceforge.jp/
-define('MINCHO_TTF_FONT','ipam.ttf');
-define('PMINCHO_TTF_FONT','ipamp.ttf');
-define('GOTHIC_TTF_FONT','ipag.ttf');
-define('PGOTHIC_TTF_FONT','ipagp.ttf');
+if(!defined('MINCHO_TTF_FONT')) define("MINCHO_TTF_FONT",'ipam.ttf');
+if(!defined('PMINCHO_TTF_FONT')) define("PMINCHO_TTF_FONT",'ipamp.ttf');
+if(!defined('GOTHIC_TTF_FONT')) define('GOTHIC_TTF_FONT','ipag.ttf');
+if(!defined('PGOTHIC_TTF_FONT')) define('PGOTHIC_TTF_FONT','ipagp.ttf');
 
 // Assume that Japanese text have been entered in EUC-JP encoding.
 // If this define is true then conversion from EUC-JP to UTF8 is done
 // automatically in the library using the mbstring module in PHP.
-define('ASSUME_EUCJP_ENCODING',false);
+if(!defined('ASSUME_EUCJP_ENCODING')) define('ASSUME_EUCJP_ENCODING',false);
 
 
 // Default font family
-define('FF_DEFAULT', FF_DV_SANSSERIF);
+if(!defined('FF_DEFAULT')) define('FF_DEFAULT', FF_DV_SANSSERIF);
 
 
 
