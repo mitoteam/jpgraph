@@ -62,7 +62,7 @@ All changes to the original library can be examined as [difference between **mai
 
 ## Overriding jpgraph's settings
 
-A lot of original jpgraph's settings are defined as constants in `jpg-config.inc.php` and `jpgraph_ttf.inc.php` files. We wrapped all these constants definitions with `if(!defined())` checks. So you can define them with required values **before** loading MtJpGraph. See Issue #24 for the details.
+A lot of original jpgraph's settings are defined as constants in `jpg-config.inc.php` and `jpgraph_ttf.inc.php` files. We wrapped all these constants definitions with `if(!defined())` checks. So you can define them with required values **before** loading MtJpGraph. See [Issue #24](https://github.com/mitoteam/jpgraph/issues/24) for the details.
 
 Code example:
 
