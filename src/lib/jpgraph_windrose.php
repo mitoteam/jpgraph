@@ -44,7 +44,7 @@ define('__DEBUG',false);
 //===================================================
 // CLASS WindrosePlotScale
 //===================================================
-class WindrosePlotScale {
+class WindrosePlotScale extends stdClass {
     private $iMax,$iDelta=5;
     private $iNumCirc=3;
     public $iMaxNum=0;
@@ -382,7 +382,7 @@ define('RANGE_DISCRETE',1);
 //===================================================
 // CLASS WindrosePlot
 //===================================================
-class WindrosePlot {
+class WindrosePlot extends stdClass {
     private $iAntiAlias=true;
     private $iData=array();
     public $iX=0.5,$iY=0.5;

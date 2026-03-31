@@ -1,4 +1,4 @@
-# JpGraph library composer package with PHP 8.2 support 
+# JpGraph library composer package 
 
 [![Packagist Version](https://img.shields.io/packagist/v/mitoteam/jpgraph?include_prereleases&style=flat-square&logo=packagist)](https://packagist.org/packages/mitoteam/jpgraph)
 [![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/mitoteam/jpgraph?style=flat-square&logo=php)](https://github.com/mitoteam/jpgraph)
@@ -11,9 +11,9 @@
 [![GitHub contributors](https://img.shields.io/github/contributors-anon/mitoteam/jpgraph?style=flat-square)](https://github.com/mitoteam/jpgraph/graphs/contributors)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/y/mitoteam/jpgraph?style=flat-square)](https://github.com/mitoteam/jpgraph/commits)
 
-Current JpGraph library version: **4.4.2**
+Current JpGraph library version: **4.4.3**
 
-PHP versions support: from 5.5 to **8.2**. [Original notes](https://jpgraph.net/download/manuals/chunkhtml/ch01s05.html) about PHP versions.
+PHP versions support: from 5.5 to **8.5**. [Original notes](https://jpgraph.net/download/manuals/chunkhtml/ch01s05.html) about PHP versions.
 
 
 ## Usage with composer
@@ -53,8 +53,8 @@ At 2022-02-25 we decided to switch to version number **10.0.0** to leave some ma
 
 Current version numbers:
 
-* **Version 10.3.x** of this package is latest version of JpGraph library with php **8.2** compatibility patches (latest code in "main" branch).
-* **Version 4.4.x** of this package provides latest version of original JpGraph library as-is without any compatibility patches (latest code in "original" branch).
+* **Version 10.x** of this package is latest version of JpGraph library with latest php version compatibility patches (code in "main" branch).
+* **Version 4.4.x** of this package provides latest version of original JpGraph library as-is without any compatibility patches (code in "original" branch).
 
 All changes to the original library can be examined as [difference between **main** and **original** branches](https://github.com/mitoteam/jpgraph/compare/original..main#files_bucket).
 
