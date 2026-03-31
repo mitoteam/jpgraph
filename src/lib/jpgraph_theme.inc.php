@@ -18,7 +18,7 @@ foreach (glob(dirname(__FILE__) . '/themes/*.php') as $theme_class_script) {
 // CLASS
 // Description:
 //===================================================
-abstract class Theme {
+abstract class Theme extends stdClass {
     protected $color_index;
     protected $graph; //MiToTeam: explicit class member declared
 

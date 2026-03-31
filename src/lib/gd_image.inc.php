@@ -663,13 +663,13 @@ class Image {
                 for($i=0; $i < count($tmp); ++$i) {
                     $w1 = $this->GetTextWidth($tmp[$i]);
                     if( $paragraph_align=="left" ) {
-                        imagestring($this->img,$use_font,(int)$x,(int)($y-$h+1+$i*$fh),$tmp[$i],$this->current_color); //MiToTeam: explicit type casting
+                        imagestring($this->img,$use_font,(int)$x,(int)($y-$h+1+$i*$fh),$tmp[$i],$this->current_color);
                     }
                     elseif( $paragraph_align=="right" ) {
-                        imagestring($this->img,$use_font,(int)($x+($w-$w1)),(int)($y-$h+1+$i*$fh),$tmp[$i],$this->current_color); //MiToTeam: explicit type casting
+                        imagestring($this->img,$use_font,(int)($x+($w-$w1)),(int)($y-$h+1+$i*$fh),$tmp[$i],$this->current_color);
                     }
                     else {
-                        imagestring($this->img,$use_font,(int)($x+$w/2-$w1/2),(int)($y-$h+1+$i*$fh),$tmp[$i],$this->current_color); //MiToTeam: explicit type casting
+                        imagestring($this->img,$use_font,(int)($x+$w/2-$w1/2),(int)($y-$h+1+$i*$fh),$tmp[$i],$this->current_color);
                     }
                 }
             }
@@ -1706,8 +1706,11 @@ class Image {
 
     // Clear resources used by image (this is normally not used since all resources are/should be
     // returned when the script terminates
+    // Note: imagedestroy() is deprecated since PHP 8.5 and has no effect since PHP 8.0
     function Destroy() {
-        imagedestroy($this->img);
+        if (PHP_VERSION_ID < 80500) {
+            @imagedestroy($this->img);
+        }
     }
 
     // Specify image format. Note depending on your installation

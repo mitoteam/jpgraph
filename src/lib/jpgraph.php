@@ -19,7 +19,7 @@ require_once('jpgraph_theme.inc.php');
 require_once('gd_image.inc.php');
 
 // Version info
-define('JPG_VERSION','4.4.2');
+define('JPG_VERSION','4.4.3');
 
 // Minimum required PHP version
 define('MIN_PHPVERSION','5.1.0');
@@ -498,7 +498,7 @@ class Footer {
 // CLASS Graph
 // Description: Main class to handle graphs
 //===================================================
-class Graph {
+class Graph extends stdClass {
     public $cache=null;   // Cache object (singleton)
     public $img=null;   // Img object (singleton)
     public $plots=array();  // Array of all plot object in the graph (for Y 1 axis)
@@ -4164,7 +4164,7 @@ class Axis extends AxisPrototype {
 // Description: Abstract base class for drawing linear and logarithmic
 // tick marks on axis
 //===================================================
-class Ticks {
+class Ticks extends stdClass {
     public $label_formatstr='';   // C-style format string to use for labels
     public $label_formfunc='';
     public $label_dateformatstr='';
@@ -5378,7 +5378,7 @@ class DisplayValue {
 // CLASS Plot
 // Description: Abstract base class for all concrete plot classes
 //===================================================
-class Plot {
+class Plot extends stdClass {
     public $numpoints=0;
     public $value;
     public $legend='';
