@@ -206,7 +206,7 @@ if (!defined('TTF_DIR')) {
             define('TTF_DIR', $sroot.'/fonts/');
         }
     } else {
-        define('TTF_DIR','/usr/share/fonts/truetype/');
+        define('TTF_DIR','/usr/share/fonts/truetype/msttcorefonts/'); // MiToTeam: default value from jpg-config.inc.php v4.4.3
     }
 }
 
