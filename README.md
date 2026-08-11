@@ -97,7 +97,3 @@ It is possible to disable custom jpgraph's exceptions handler by calling explici
 * Original JpGraph website: https://jpgraph.net
 * Documentation: https://jpgraph.net/doc/
 * Examples: https://jpgraph.net/features/gallery.php
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=mitoteam/jpgraph&type=Date)](https://star-history.com/#mitoteam/jpgraph&Date)
