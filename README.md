@@ -11,7 +11,7 @@
 [![GitHub contributors](https://img.shields.io/github/contributors-anon/mitoteam/jpgraph?style=flat-square)](https://github.com/mitoteam/jpgraph/graphs/contributors)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/y/mitoteam/jpgraph?style=flat-square)](https://github.com/mitoteam/jpgraph/commits)
 
-Current JpGraph library version: **4.4.3**
+Current JpGraph library version: **4.4.4**
 
 PHP versions support: from 5.5 to **8.5**. [Original notes](https://jpgraph.net/download/manuals/chunkhtml/ch01s05.html) about PHP versions.
 
@@ -49,7 +49,7 @@ Download latest version archive from [Releases](https://github.com/mitoteam/jpgr
 
 We started with version _4.3.5_ as latest available library version in time we started. But we need to make some patches to original library (for example to support latest PHP versions). So we had to switch to own version numbers to be able to release updates.
 
-At 2022-02-25 we decided to switch to version number **10.0.0** to leave some margin in numbering from original library v4.3.5.
+In 2022 we decided to switch to version number **10.0.0** to leave some margin in numbering from original library v4.3.5.
 
 Current version numbers:
 
