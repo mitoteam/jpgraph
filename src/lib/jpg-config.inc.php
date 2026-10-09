@@ -39,7 +39,7 @@
 //
 //------------------------------------------------------------------------
 // define('CACHE_DIR','/tmp/jpgraph_cache/');
-// define('TTF_DIR','/usr/share/fonts/TrueType/');
+// define('TTF_DIR','/usr/share/fonts/TrueType/'); //MiToTeam: defined in jpgraph.php:209 with better default value OS-dependent detection
 // define('MBTTF_DIR','/usr/share/fonts/TrueType/');
 
 //-------------------------------------------------------------------------
