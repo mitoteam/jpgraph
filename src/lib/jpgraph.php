@@ -19,7 +19,7 @@ require_once('jpgraph_theme.inc.php');
 require_once('gd_image.inc.php');
 
 // Version info
-define('JPG_VERSION','4.4.3');
+define('JPG_VERSION','4.4.4');
 
 // Minimum required PHP version
 define('MIN_PHPVERSION','5.1.0');
