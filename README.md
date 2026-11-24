@@ -1,4 +1,4 @@
-# JpGraph library composer package with PHP 8.5 support
+# JpGraph library composer package with PHP 8.6 support
 
 [![Packagist Version](https://img.shields.io/packagist/v/mitoteam/jpgraph?include_prereleases&style=flat-square&logo=packagist)](https://packagist.org/packages/mitoteam/jpgraph)
 [![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/mitoteam/jpgraph?style=flat-square&logo=php)](https://github.com/mitoteam/jpgraph)
@@ -13,7 +13,7 @@
 
 JpGraph library version: **4.4.4**
 
-PHP versions support: from 5.5 to **8.5**. [Original notes](https://jpgraph.net/download/manuals/chunkhtml/ch01s05.html) about PHP versions.
+PHP versions support: from 5.5 to **8.6**. [Original notes](https://jpgraph.net/download/manuals/chunkhtml/ch01s05.html) about PHP versions.
 
 
 ## Usage with composer
@@ -55,7 +55,7 @@ In 2022 we decided to switch to version number **10.0.0** to leave some margin i
 
 Current version numbers:
 
-* **Version 10.x** of this package is the latest version of JpGraph library with php **8.2-8.5** compatibility patches (code in "main" branch). Can be loaded in Extended Mode (see below).
+* **Version 10.x** of this package is the latest version of JpGraph library with php **8.2-8.6** compatibility patches (code in "main" branch). Can be loaded in Extended Mode (see below).
 * **Version 4.x** of this package provides latest version of original JpGraph library as-is without any compatibility patches (code in "original" branch).
 
 All changes to the original library can be examined as [difference between **main** and **original** branches](https://github.com/mitoteam/jpgraph/compare/original..main#files_bucket).
